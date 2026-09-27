@@ -1,0 +1,47 @@
+{
+  "name": "roadtodevconvi-problem1",
+  "version": "1.0.0",
+  "description": "The Operator's Booth: Meera's Railway Delay API - x402-gated Indian Railway delay notice parser on Base Sepolia",
+  "scripts": {
+    "test": "vitest run",
+    "dev": "tsx watch --env-file-if-exists=.env src/server.ts",
+    "start": "tsx --env-file-if-exists=.env src/server.ts",
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc --noEmit",
+    "buyer": "tsx --env-file-if-exists=.env src/buyer.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sadiyamulani03/RoadToDevconVI-Problem1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sadiyamulani03/RoadToDevconVI-Problem1/issues"
+  },
+  "homepage": "https://github.com/sadiyamulani03/RoadToDevconVI-Problem1#readme",
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@x402/core": "^2.27.0",
+    "@x402/evm": "^2.27.0",
+    "@x402/express": "^2.27.0",
+    "@x402/fetch": "^2.27.0",
+    "express": "^5.2.1",
+    "viem": "^2.48.11",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^22.19.0",
+    "@types/supertest": "^7.2.1",
+    "supertest": "^7.3.0",
+    "tsx": "^4.23.15",
+    "typescript": "~5.9.3",
+    "vitest": "^5.0.2"
+  },
+  "type": "module"
+}
